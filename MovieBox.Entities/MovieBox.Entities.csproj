@@ -42,23 +42,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Company.cs" />
     <Compile Include="Communication\Email.cs" />
     <Compile Include="Communication\Emails.cs" />
     <Compile Include="Communication\PhoneNumber.cs" />
     <Compile Include="Communication\PhoneNumbers.cs" />
     <Compile Include="EntityBase.cs" />
+    <Compile Include="Geography\Location.cs" />
+    <Compile Include="Humans\Customer.cs" />
     <Compile Include="Humans\People.cs" />
+    <Compile Include="Interfaces\IAddress.cs" />
+    <Compile Include="Interfaces\ICompanyRepository.cs" />
     <Compile Include="Interfaces\IEmailRepository.cs" />
     <Compile Include="Interfaces\IMovieRepository.cs" />
     <Compile Include="Interfaces\IPersonRepository.cs" />
     <Compile Include="Interfaces\IPhoneNumberRepository.cs" />
     <Compile Include="Interfaces\IUsAddressRepository.cs" />
-    <Compile Include="Location\AddressBase.cs" />
-    <Compile Include="Location\UsAddress.cs" />
-    <Compile Include="Location\UsAddresses.cs" />
+    <Compile Include="Geography\AddressBase.cs" />
+    <Compile Include="Geography\UsAddress.cs" />
+    <Compile Include="Geography\UsAddresses.cs" />
+    <Compile Include="Movies\Rentals.cs" />
     <Compile Include="Movies\Movie.cs" />
     <Compile Include="Movies\Movies.cs" />
     <Compile Include="Humans\Person.cs" />
+    <Compile Include="Movies\Rental.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

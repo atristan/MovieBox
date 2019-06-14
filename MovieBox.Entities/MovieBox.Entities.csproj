@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9575126D-B693-4415-B6E1-42F6D19B8C3C}</ProjectGuid>
+    <ProjectGuid>{6833C983-8288-4D95-BA42-23D03330E9CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MovieBox.Utilities</RootNamespace>
-    <AssemblyName>MovieBox.Utilities</AssemblyName>
+    <RootNamespace>MovieBox.Entities</RootNamespace>
+    <AssemblyName>MovieBox.Entities</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,27 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\Email\EmailConfigCollection.cs" />
-    <Compile Include="Configuration\Email\EmailConfigElement.cs" />
-    <Compile Include="Configuration\Email\EmailConfigSection.cs" />
-    <Compile Include="Configuration\Email\EmailConfigService.cs" />
-    <Compile Include="Configuration\Email\EmailService.cs" />
-    <Compile Include="DateTimeHelpers.cs" />
-    <Compile Include="Entities\EmailFields.cs" />
-    <Compile Include="Entities\EmailSettings.cs" />
-    <Compile Include="ExcelHelpers.cs" />
-    <Compile Include="ExtensionHelpers.cs" />
-    <Compile Include="Configuration\ConfigElementCollection.cs" />
-    <Compile Include="Configuration\ConfigElement.cs" />
-    <Compile Include="Configuration\ConfigSection.cs" />
-    <Compile Include="Configuration\ConfigService.cs" />
+    <Compile Include="Communication\Email.cs" />
+    <Compile Include="Communication\Emails.cs" />
+    <Compile Include="Communication\PhoneNumber.cs" />
+    <Compile Include="Communication\PhoneNumbers.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Humans\People.cs" />
+    <Compile Include="Interfaces\IEntityRepository.cs" />
+    <Compile Include="Location\AddressBase.cs" />
+    <Compile Include="Location\UsAddress.cs" />
+    <Compile Include="Location\Addresses.cs" />
+    <Compile Include="Movies\Movie.cs" />
+    <Compile Include="Movies\Movies.cs" />
+    <Compile Include="Humans\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringHelpers.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Configuration\Email\Templates\SampleBodyTemplate.txt" />
-    <Content Include="Configuration\Email\Templates\SampleItemTemplate.txt" />
+    <ProjectReference Include="..\MovieBox.Infrastructure\MovieBox.Infrastructure.csproj">
+      <Project>{76095b3c-2477-4c0f-a5ac-adb4b9caad82}</Project>
+      <Name>MovieBox.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

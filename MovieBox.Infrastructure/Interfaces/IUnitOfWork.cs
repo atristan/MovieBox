@@ -1,12 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region Includes
 
-namespace MovieBox.Infrastructure.Interfaces
+// .NET Libraries
+using System;
+
+#endregion
+
+namespace Infrastructure.Interfaces
 {
-    interface IUnitOfWork
+    /// <summary>
+    /// Defines a contract for implementing unit of work operations.
+    /// </summary>
+    public interface IUnitOfWork
+        : IDisposable
     {
+        /// <summary>
+        /// Commits the changes to the underlying data store.
+        /// </summary>
+        /// <param name="resetAfterCommit"></param>
+        void Commit(bool resetAfterCommit);
+
+        /// <summary>
+        /// Undoes all changes to the entities in the model.
+        /// </summary>
+        void Undo();
     }
 }

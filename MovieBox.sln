@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.Utilities", "Movie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.Infrastructure", "MovieBox.Infrastructure\MovieBox.Infrastructure.csproj", "{76095B3C-2477-4C0F-A5AC-ADB4B9CAAD82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.Entities", "MovieBox.Entities\MovieBox.Entities.csproj", "{6833C983-8288-4D95-BA42-23D03330E9CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{76095B3C-2477-4C0F-A5AC-ADB4B9CAAD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76095B3C-2477-4C0F-A5AC-ADB4B9CAAD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76095B3C-2477-4C0F-A5AC-ADB4B9CAAD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6833C983-8288-4D95-BA42-23D03330E9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6833C983-8288-4D95-BA42-23D03330E9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6833C983-8288-4D95-BA42-23D03330E9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6833C983-8288-4D95-BA42-23D03330E9CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

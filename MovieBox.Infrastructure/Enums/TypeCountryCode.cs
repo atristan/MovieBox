@@ -21,8 +21,8 @@ namespace Utilities
         /// <summary>
         /// Indicates development mode.
         /// </summary>
-        [Description("United States")]
-        US = 1,
+        [Description("United States of America")]
+        USA = 1,
 
         /// <summary>
         /// Indicates development mode.

@@ -5,12 +5,12 @@ using System.ComponentModel;
 
 #endregion
 
-namespace Utilities
+namespace Infrastructure
 {
     /// <summary>
-    /// Determines the state type.
+    /// Determines the U.S. state type.
     /// </summary>
-    public enum TypeUsaState
+    public enum TypeUsState
     {
         /// <summary>
         /// Indicates an unidentified value.

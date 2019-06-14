@@ -19,22 +19,14 @@ namespace Entities
     {
         #region Constructors
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Movies"/> class.
-        /// </summary>
+        /// <inheritdoc />
         public Movies() { }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Movies"/> class.
-        /// </summary>
-        /// <param name="initList">Accepts an IList of Employer as the initial list.</param>
+        /// <inheritdoc />
         public Movies(IList<Movie> initList)
             : base(initList) { }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Movies"/> class.
-        /// </summary>
-        /// <param name="initList">Accepts a CollectionBase of Employer as the initial list.</param>
+        /// <inheritdoc />
         public Movies(CollectionBase<Movie> initList)
             : base(initList) { }
 

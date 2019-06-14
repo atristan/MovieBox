@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations;
 
 // PRIS Libraries
 using Infrastructure;
-using MovieBox.Entities;
 
 #endregion
 
@@ -52,6 +51,16 @@ namespace Entities
         /// Gets or sets the person's title.
         /// </summary>
         public TypePersonTitle PersonTitleType { get; set; }
+
+        /// <summary>
+        /// Gets or sets a collection of phone numbers associated with this person.
+        /// </summary>
+        public PhoneNumbers Numbers { get; set; }
+
+        /// <summary>
+        /// Gets or sets a collection of email addresses associated with this person.
+        /// </summary>
+        public Emails EmailAddresses { get; set; }
 
         #endregion
 

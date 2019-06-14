@@ -12,30 +12,30 @@ using Infrastructure;
 namespace Entities
 {
     /// <summary>
-    /// Represents a collection of email addresses in the system.
+    /// Represents a collection of US-based rentals in the system.
     /// </summary>
-    public class Emails
-        : CollectionBase<Email>
+    public class Rentals
+        : CollectionBase<Rental>
     {
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Emails"/> class.
+        /// Initializes a new instance of the <see cref="Rentals"/> class.
         /// </summary>
-        public Emails() { }
+        public Rentals() { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Emails"/> class.
+        /// Initializes a new instance of the <see cref="Rentals"/> class.
         /// </summary>
         /// <param name="initList">Accepts an IList of Employer as the initial list.</param>
-        public Emails(IList<Email> initList)
+        public Rentals(IList<Rental> initList)
             : base(initList) { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Emails"/> class.
+        /// Initializes a new instance of the <see cref="Rentals"/> class.
         /// </summary>
         /// <param name="initList">Accepts a CollectionBase of Employer as the initial list.</param>
-        public Emails(CollectionBase<Email> initList)
+        public Rentals(CollectionBase<Rental> initList)
             : base(initList) { }
 
         #endregion

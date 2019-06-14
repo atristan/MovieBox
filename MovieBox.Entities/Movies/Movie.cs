@@ -4,7 +4,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Infrastructure;
 
 // PRIS Libraries
 using Infrastructure.Enums;
@@ -33,6 +32,12 @@ namespace Entities
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets the genre of the movie.
+        /// </summary>
+        [Required]
+        public TypeGenre GenreType { get; set; }
+
+        /// <summary>
         /// Gets or sets a collection of people who starred in the movie.
         /// </summary>
         public People Actors { get; set; }
@@ -47,19 +52,19 @@ namespace Entities
         /// </summary>
         public People Producers { get; set; }
 
-        /// <summary>
-        /// Gets or sets the genre of the movie.
-        /// </summary>
-        [Required]
-        public TypeGenre GenreType { get; set; }
-
         #endregion
 
         #region Constructors
 
+        /// <summary>
+        /// Initializes a new instance of Movie in the system.
+        /// </summary>
         public Movie()
         {
             GenreType = TypeGenre.None;
+            Actors = new People();
+            Directors = new People();
+            Producers = new People();
         }
 
         #endregion

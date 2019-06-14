@@ -15,42 +15,36 @@ namespace Entities
     /// Represents the base address components.
     /// </summary>
     public abstract class AddressBase
-        : EntityBase
+        : EntityBase, IAddress
     {
-        #region Properties
+        #region IAddress Members
 
-        /// <summary>
-        /// Gets or sets the zip code.
-        /// </summary>
+        /// <inheritdoc />
         [Required]
         public int ZipCode { get; set; }
 
-        /// <summary>
-        /// Gets or sets the last four digits of a zip code.
-        /// </summary>
+        /// <inheritdoc />
         public int Zip4 { get; set; }
 
-        /// <summary>
-        /// Gets or sets the primary address locator.
-        /// </summary>
+        /// <inheritdoc />
         [Required]
         public string Street1 { get; set; }
 
-        /// <summary>
-        /// Gets or sets a second address locator.
-        /// </summary>
+        /// <inheritdoc />
         public string Street2 { get; set; }
 
-        /// <summary>
-        /// Gets or sets a third address locator.
-        /// </summary>
+        /// <inheritdoc />
         public string Street3 { get; set; }
 
-        /// <summary>
-        /// Gets or sets the city.
-        /// </summary>
+        /// <inheritdoc />
         [Required]
         public string City { get; set; }
+
+        #endregion
+
+        #region ICountry Members
+
+        
 
         #endregion
 

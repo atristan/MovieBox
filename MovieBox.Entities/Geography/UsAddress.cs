@@ -14,11 +14,6 @@ namespace Entities
         #region Properties
 
         /// <summary>
-        /// Gets or sets the country code type.
-        /// </summary>
-        public TypeCountryCode CountryCodeType => TypeCountryCode.USA;
-
-        /// <summary>
         /// Gets or sets the US state type.
         /// </summary>
         public TypeUsState UsStateType { get; set; }

@@ -28,7 +28,7 @@ namespace Entities
         /// Gets or sets the email address.
         /// </summary>
         [Required]
-        public string Address { get; set; }
+        public string Address { get; set; } 
 
         /// <summary>
         /// Gets or sets the ordinal type of the email.

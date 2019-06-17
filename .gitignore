@@ -187,3 +187,7 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.vs/MovieBox/v15/Server/sqlite3/storage.ide-wal
+/.vs/MovieBox/v15/Server/sqlite3/storage.ide-shm
+/.vs/MovieBox/v15/Server/sqlite3/storage.ide
+/.vs/MovieBox/v15/Server/sqlite3/db.lock

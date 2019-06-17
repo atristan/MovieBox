@@ -24,24 +24,36 @@ namespace Entities
         /// </summary>
         public int EntityIdx { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the zip code for an address.
+        /// </summary>
         [Required]
         public int ZipCode { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the last four of a zip code.
+        /// </summary>
         public int Zip4 { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the primary street information.
+        /// </summary>
         [Required]
         public string Street1 { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the secondary street information.
+        /// </summary>
         public string Street2 { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the tertiary street information.
+        /// </summary>
         public string Street3 { get; set; }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets or sets the city.
+        /// </summary>
         [Required]
         public string City { get; set; }
 

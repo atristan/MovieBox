@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6833C983-8288-4D95-BA42-23D03330E9CF}</ProjectGuid>
+    <ProjectGuid>{635A9CDC-DF87-4873-8E53-DB03A1332003}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MovieBox.Entities</RootNamespace>
-    <AssemblyName>MovieBox.Entities</AssemblyName>
+    <RootNamespace>MovieBox.DataAccess</RootNamespace>
+    <AssemblyName>MovieBox.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -42,37 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\Company.cs" />
-    <Compile Include="Communication\Email.cs" />
-    <Compile Include="Communication\Emails.cs" />
-    <Compile Include="Communication\PhoneNumber.cs" />
-    <Compile Include="Communication\PhoneNumbers.cs" />
-    <Compile Include="EntityBase.cs" />
-    <Compile Include="Geography\Location.cs" />
-    <Compile Include="Humans\Customer.cs" />
-    <Compile Include="Humans\People.cs" />
-    <Compile Include="Interfaces\ICompanyRepository.cs" />
-    <Compile Include="Interfaces\ICustomerRepository.cs" />
-    <Compile Include="Interfaces\IEmailRepository.cs" />
-    <Compile Include="Interfaces\IMovieRepository.cs" />
-    <Compile Include="Interfaces\IPersonRepository.cs" />
-    <Compile Include="Interfaces\IPhoneNumberRepository.cs" />
-    <Compile Include="Interfaces\IAddressRepository.cs" />
-    <Compile Include="Geography\Address.cs" />
-    <Compile Include="Geography\Addresses.cs" />
-    <Compile Include="Interfaces\IRentalRepository.cs" />
-    <Compile Include="Movies\Rentals.cs" />
-    <Compile Include="Movies\Movie.cs" />
-    <Compile Include="Movies\Movies.cs" />
-    <Compile Include="Humans\Person.cs" />
-    <Compile Include="Movies\Rental.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MovieBox.Infrastructure\MovieBox.Infrastructure.csproj">
-      <Project>{76095b3c-2477-4c0f-a5ac-adb4b9caad82}</Project>
-      <Name>MovieBox.Infrastructure</Name>
-    </ProjectReference>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

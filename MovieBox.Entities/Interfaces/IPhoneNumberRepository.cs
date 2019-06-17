@@ -1,6 +1,7 @@
 ﻿#region Includes
 
 // .NET Libraries
+using System;
 using System.Collections.Generic;
 
 // MovieBox Libraries

@@ -61,9 +61,9 @@ namespace Utilities
         /// <param name="value">The value to format.</param>
         /// <param name="code">The country code; default is US.</param>
         /// <returns>Formatted string value in the format +x (xxx) xxx-xxxx.</returns>
-        public static string FormatPhoneNumber(string value, TypeCountryCode code = TypeCountryCode.US)
+        public static string FormatPhoneNumber(string value, int code = 1)
         {
-            int countrycode = (int)code;
+            int countrycode = code;
 
             // Remove "+" if it exists
             value = value.Substring(value.IndexOf("+", StringComparison.Ordinal) + 1);
@@ -73,9 +73,12 @@ namespace Utilities
             {
                 switch (code)
                 {
-                    case TypeCountryCode.Mexico:
+                    // Mexico
+                    case 52:
                         value = value.Substring(2);
                         break;
+
+                    // US
                     default:
                         value = value.Substring(1);
                         break;

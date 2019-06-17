@@ -1,0 +1,6 @@
+﻿<table cellspacing='0' cellpadding='0' border='0' width='600' bgcolor='#D9D9D9'>
+	{0}	
+	<tr>
+		<td bgcolor='#ffffff' height='8'></td>
+	</tr>
+</table>

@@ -59,6 +59,12 @@ namespace Entities
         [Required]
         public TypeCountryCode CountryCodeType { get; set; }
 
+        /// <summary>
+        /// Gets or sets the ordinality of the phone number (i.e. primary, secondary, etc.).
+        /// </summary>
+        [Required]
+        public TypeOrdinality Ordinality { get; set; }
+
         #endregion
 
         #region Constructors
@@ -90,6 +96,9 @@ namespace Entities
 
             if(CountryCodeType == TypeCountryCode.None)
                 yield return new ValidationResult("Country code must be set.", new [] { "CountryCodeType" });
+
+            if(Ordinality == TypeOrdinality.None)
+                yield return new ValidationResult("Ordinality must be set.", new [] { "Ordinality" });
         }
 
         #endregion

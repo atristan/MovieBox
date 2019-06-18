@@ -2,6 +2,7 @@
 
 // .NET Libraries
 using System;
+using System.ComponentModel.DataAnnotations;
 
 #endregion
 
@@ -18,11 +19,12 @@ namespace Entities
         /// <summary>
         /// Gets or sets the date the customer became a member.
         /// </summary>
-        public DateTime AnniversaryDate { get; set; }
+        public DateTime MemberStartDate { get; set; }
 
         /// <summary>
         /// Gets or sets the customer id for the person.
         /// </summary>
+        [Required]
         public string CustomerId { get; set; }
 
         /// <summary>

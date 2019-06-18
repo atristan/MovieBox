@@ -23,28 +23,7 @@ namespace Infrastructure
 
         #endregion
 
-        #region Properties
-
-        /// <summary>
-        /// Gets or sets the current data context storage container instance.
-        /// </summary>
-        public static IDataContextStorageContainer<T> CurrentContextContainer
-        {
-            get => _currentContextContainer ?? (_currentContextContainer = CreateStorageContainer());
-            set => _currentContextContainer = value;
-        }
-
-        #endregion
-
         #region Methods
-
-        /// <summary>
-        /// Clears out the current data storage context.
-        /// </summary>
-        public static void Clear()
-        {
-            CurrentContextContainer.Clear();
-        }
 
         /// <summary>
         /// Creates a new container that uses HttpContext.Current.Items when it is not null, 
@@ -58,7 +37,7 @@ namespace Infrastructure
                 if (HttpContext.Current == null)
                     _currentContextContainer = new ThreadDataContextStorageContainer<T>();
                 else
-                    _currentContextContainer = new HttpDataContextContainer<T>();
+                    _currentContextContainer = new HttpDataContextStorageContainer<T>();
             }
             return _currentContextContainer;
         }

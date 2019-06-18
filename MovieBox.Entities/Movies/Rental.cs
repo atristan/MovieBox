@@ -44,6 +44,11 @@ namespace Entities
         [Required]
         public string TrackingId { get; set; }
 
+        /// <summary>
+        /// Gets or sets a collection of <see cref="Movie"/> that were checked out with this rental.
+        /// </summary>
+        public Movies CheckedOut { get; set; }
+
         #endregion
 
         #region Methods

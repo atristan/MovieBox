@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionBase.cs" />
+    <Compile Include="DataContextStorage\DataContextFactory.cs" />
     <Compile Include="DataContextStorage\DataContextStorageFactory.cs" />
     <Compile Include="DataContextStorage\HttpDataContextContainer.cs" />
     <Compile Include="DataContextStorage\ThreadDataContextStorageContainer.cs" />
@@ -67,6 +68,11 @@
     <Compile Include="ValueObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MovieBox.Utilities\MovieBox.Utilities.csproj">
+      <Project>{9575126d-b693-4415-b6e1-42f6d19b8c3c}</Project>
+      <Name>MovieBox.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

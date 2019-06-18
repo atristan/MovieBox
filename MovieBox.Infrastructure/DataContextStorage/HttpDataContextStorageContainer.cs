@@ -14,7 +14,7 @@ namespace Infrastructure
     /// A Helper class to store objects like a DataContext in the HttpContext.Current.Items collection.
     /// </summary>
     /// <typeparam name="T">Specifies the type of object to store.</typeparam>
-    public class HttpDataContextContainer<T>
+    public class HttpDataContextStorageContainer<T>
         : IDataContextStorageContainer<T> where T : class
     {
         #region Member Fields

@@ -46,7 +46,7 @@ namespace Infrastructure.Interfaces
         /// ex.:  x => x.SomeCollection, x => x.SomeOtherCollection
         /// </param>
         /// <returns>An IEnumerable of the requested type T.</returns>
-        IEnumerable<T> FindAll(Expression<Func<T, bool>>[] predicate, params Expression<Func<T, object>>[] includeProperties);
+        IEnumerable<T> FindAll(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
 
         /// <summary>
         /// Adds an entity to the underlying collection.

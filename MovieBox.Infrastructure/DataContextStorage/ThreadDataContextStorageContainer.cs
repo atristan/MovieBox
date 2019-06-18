@@ -12,6 +12,10 @@ using Infrastructure.Interfaces;
 
 namespace Infrastructure
 {
+    /// <summary>
+    /// A helper class to store objects like a DataContext in a static HastTable inexed by the name of a thread.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ThreadDataContextStorageContainer<T>
         : IDataContextStorageContainer<T> where T : class
     {
@@ -39,10 +43,7 @@ namespace Infrastructure
 
         #region IDataContextStorageContainer Members
 
-        /// <summary>
-        /// Returns an object from the container when it exits.  Returns null otherwise.
-        /// </summary>
-        /// <returns>The object from the container when it exists, null otherwise.</returns>
+        /// <inheritdoc />
         public T GetDataContext()
         {
             T context = null;
@@ -53,10 +54,7 @@ namespace Infrastructure
             return context;
         }
 
-        /// <summary>
-        /// Stores the object in the hashtable indexed by the thread's name.
-        /// </summary>
-        /// <param name="objectContext">The object to store.</param>
+        /// <inheritdoc />
         public void Store(T objectContext)
         {
             if (_storedContexts.Contains(GetThreadName()))
@@ -65,9 +63,7 @@ namespace Infrastructure
                 _storedContexts.Add(GetThreadName(), objectContext);
         }
 
-        /// <summary>
-        /// Clears the object from the container.
-        /// </summary>
+        /// <inheritdoc />
         public void Clear()
         {
             if (_storedContexts.Contains(GetThreadName()))

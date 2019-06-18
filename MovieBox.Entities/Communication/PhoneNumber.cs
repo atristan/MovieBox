@@ -79,6 +79,16 @@ namespace Entities
 
         #region Methods
 
+        /// <summary>
+        /// Converts a phone number to a string with the following format:
+        ///     15122239876
+        /// </summary>
+        /// <returns>A string value representing the country code, the area code, and the number with no special characters.</returns>
+        public override string ToString()
+        {
+            return $"{(int)CountryCodeType}{AreaCode}{Prefix}{LineNumber}";
+        }
+
         /// <inheritdoc />
         public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

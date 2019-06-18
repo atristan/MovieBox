@@ -17,14 +17,14 @@ namespace Entities
         : IRepository<Movie, int>
     {
         /// <summary>
-        /// Finds a person by their unique ID in the system.
+        /// Finds a movie by its unique ID in the system.
         /// </summary>
-        /// <param name="id">The unique ID of the person in the system.</param>
+        /// <param name="id">The unique ID of the movie in the system.</param>
         /// <returns>A single instance of <see cref="Movie"/> from the repository, otherwise returns null.</returns>
         Movie FindById(int id);
 
         /// <summary>
-        /// Finds all instances of people with the specified name.
+        /// Finds all instances of movie with the specified name.
         /// </summary>
         /// <param name="key">The name to search for.</param>
         /// <returns>A collection of instances with the name specified.</returns>

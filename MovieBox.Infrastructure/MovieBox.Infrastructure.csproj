@@ -44,9 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionBase.cs" />
-    <Compile Include="DataContextStorage\DataContextFactory.cs" />
     <Compile Include="DataContextStorage\DataContextStorageFactory.cs" />
-    <Compile Include="DataContextStorage\HttpDataContextContainer.cs" />
+    <Compile Include="DataContextStorage\HttpDataContextStorageContainer.cs" />
     <Compile Include="DataContextStorage\ThreadDataContextStorageContainer.cs" />
     <Compile Include="DomainEntity.cs" />
     <Compile Include="Enums\MovieTypes\TypeGenre.cs" />

@@ -11,7 +11,7 @@ using Infrastructure.Interfaces;
 namespace Entities
 {
     /// <summary>
-    /// Defines various methods available to work with tje <see cref="Person"/> repository in the system.
+    /// Defines various methods available to work with tje <see cref="T:Entities.Person" /> repository in the system.
     /// </summary>
     public interface IPersonRepository
         : IRepository<Person, int>

@@ -17,14 +17,14 @@ namespace Entities
         : IRepository<Email, int>
     {
         /// <summary>
-        /// Finds a person by their unique ID in the system.
+        /// Finds an email by its unique ID in the system.
         /// </summary>
-        /// <param name="id">The unique ID of the person in the system.</param>
+        /// <param name="id">The unique ID of the email in the system.</param>
         /// <returns>A single instance of <see cref="Email"/> from the repository, otherwise returns null.</returns>
         Email FindById(int id);
 
         /// <summary>
-        /// Finds all instances of people with the specified name.
+        /// Finds all instances of emails with the specified name.
         /// </summary>
         /// <param name="key">The name to search for.</param>
         /// <returns>A collection of instances with the name specified.</returns>

@@ -10,12 +10,18 @@ using System.ComponentModel.DataAnnotations;
 namespace Entities
 {
     /// <summary>
-    /// Represents a US-based rental.
+    /// Represents a rental in the system.
     /// </summary>
     public class Rental
         : EntityBase
     {
         #region Properties
+
+        /// <summary>
+        /// Gets or sets the entity id who rented the movie or movies.
+        /// </summary>
+        [Required]
+        public int EntityIdx { get; set; }
 
         /// <summary>
         /// Gets or sets a flag indicating whether or not rental is damaged.
@@ -31,12 +37,6 @@ namespace Entities
         /// Gets or sets the date returned.
         /// </summary>
         public DateTime? DateReturned { get; set; }
-
-        /// <summary>
-        /// Gets or sets the rate per day of the rental.
-        /// </summary>
-        [Required]
-        public double RatePerDay { get; set; }
 
         /// <summary>
         /// Gets or sets an alpha-numeric tracking id for the rental.
@@ -59,11 +59,35 @@ namespace Entities
             if (Id < 1)
                 yield return new ValidationResult("Id supplied is not valid.", new[] { "Id" });
 
-            if(RatePerDay < 1)
-                yield return new ValidationResult("Rate per day cannot be 0.", new []{ "RatePerDay" });
+            if (EntityIdx < 1)
+                yield return new ValidationResult("Entity id supplied is not valid.", new[] { "EntityIdx" });
 
             if (string.IsNullOrEmpty(TrackingId))
                 yield return new ValidationResult("Tracking ID cannot be null or empty.", new[] { "TrackingId" });
+        }
+
+        /// <summary>
+        /// Gets the rate per day for the rental.
+        /// </summary>
+        /// <returns>A double value indicating how much per day the rental is.</returns>
+        public double GetRatePerDay()
+        {
+            double result = 0d;
+            if (CheckedOut.Count > 0)
+            {
+                foreach (Movie movie in CheckedOut)
+                    result += result + movie.RatePerDay;
+            }
+
+            return result;
+        }
+
+        public double? GetTotalRate()
+        {
+            if (DateReturned == null)
+                return null;
+
+
         }
 
         #endregion

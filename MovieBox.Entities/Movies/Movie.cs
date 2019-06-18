@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Dynamic;
 
 // PRIS Libraries
 using Infrastructure.Enums;
@@ -21,9 +22,21 @@ namespace Entities
         #region Properties
 
         /// <summary>
+        /// Gets or sets the tracking id for the movie.
+        /// </summary>
+        [Required]
+        public string TrackingId { get; set; }
+
+        /// <summary>
         /// Gets or sets the release date of the movie.
         /// </summary>
         public DateTime ReleaseDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets the rate of the movie per day.
+        /// </summary>
+        [Required]
+        public double RatePerDay { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the movie.
@@ -76,6 +89,12 @@ namespace Entities
         {
             if (Id < 1)
                 yield return new ValidationResult("Id supplied is not valid.", new[] { "Id" });
+
+            if (RatePerDay < 1)
+                yield return new ValidationResult("Rate supplied is not valid.", new[] { "RatePerDay" });
+
+            if (string.IsNullOrEmpty(TrackingId))
+                yield return new ValidationResult("Tracking Id cannot be null or empty", new []{ "TrackingId" });
 
             if (string.IsNullOrEmpty(Name))
                 yield return new ValidationResult("Name cannot be null or empty.", new[] { "Name" });

@@ -22,6 +22,7 @@ namespace Entities
         /// <summary>
         /// Gets or sets the ID of the entity this address belongs to.
         /// </summary>
+        [Required]
         public int EntityIdx { get; set; }
 
         /// <summary>
@@ -83,6 +84,9 @@ namespace Entities
         {
             if (Id < 1)
                 yield return new ValidationResult("Id supplied is not valid.", new[] { "Id" });
+
+            if (EntityIdx < 1)
+                yield return new ValidationResult("Entity Id supplied is not valid.", new[] { "EntityIdx" });
 
             if (ZipCode == 0)
                 yield return new ValidationResult("Zip code cannot be null or empty.", new[] { "ZipCode" });

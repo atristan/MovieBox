@@ -22,6 +22,7 @@ namespace Entities
         /// <summary>
         /// Gets or sets the ID of the entity the email belongs to.
         /// </summary>
+        [Required]
         public int EntityIdx { get; set; }
 
         /// <summary>
@@ -61,6 +62,9 @@ namespace Entities
         {
             if (Id < 1)
                 yield return new ValidationResult("Id supplied is not valid.", new[] { "Id" });
+
+            if(EntityIdx < 1)
+                yield return new ValidationResult("Entity Id supplied is not valid", new []{ "EntityIdx" });
 
             if (string.IsNullOrEmpty(Address))
                 yield return new ValidationResult("Email address cannot be null or empty.", new[] { "Address" });

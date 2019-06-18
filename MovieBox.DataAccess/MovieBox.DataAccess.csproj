@@ -48,6 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\AddressConfiguration.cs" />
+    <Compile Include="Configurations\CompanyConfiguration.cs" />
+    <Compile Include="Configurations\EmailConfiguration.cs" />
+    <Compile Include="Configurations\MovieConfiguration.cs" />
+    <Compile Include="Configurations\PersonConfiguration.cs" />
+    <Compile Include="Configurations\PhoneNumberConfiguration.cs" />
+    <Compile Include="Configurations\RentalConfiguration.cs" />
     <Compile Include="Initializers\CreateDbIfModelChanges.cs" />
     <Compile Include="MovieBoxContextInitializer.cs" />
     <Compile Include="DataContextFactory.cs" />

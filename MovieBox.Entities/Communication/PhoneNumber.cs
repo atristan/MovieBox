@@ -23,6 +23,7 @@ namespace Entities
         /// <summary>
         /// Gets or sets the entity ID the phone number belongs to.
         /// </summary>
+        [Required]
         public int EntityIdx { get; set; }
 
         /// <summary>
@@ -93,7 +94,10 @@ namespace Entities
         public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if (Id < 1)
-                yield return new ValidationResult("Id supplied is not valid.", new[] { "Id" });
+                yield return new ValidationResult("Id supplied is not valid.", new[] { "Idx" });
+
+            if (EntityIdx < 1)
+                yield return new ValidationResult("Entity Id supplied is not valid.", new[] { "EntityIdx" });
 
             if (AreaCode == 0)
                 yield return new ValidationResult("Area code cannot be null or empty.", new[] { "AreaCode" });

@@ -17,29 +17,10 @@ namespace Entities
         : IRepository<Email, int>
     {
         /// <summary>
-        /// Finds an email by its unique ID in the system.
+        /// Searches email addresses in the repository for emails that contain the search string.
         /// </summary>
-        /// <param name="id">The unique ID of the email in the system.</param>
-        /// <returns>A single instance of <see cref="Email"/> from the repository, otherwise returns null.</returns>
-        Email FindById(int id);
-
-        /// <summary>
-        /// Finds all instances of emails with the specified name.
-        /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<Email> FindBy(string key);
-
-        /// <summary>
-        /// Deletes an instance of <see cref="Email"/> from the repository.
-        /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="Email"/> to the repository.
-        /// </summary>
-        /// <param name="instance"></param>
-        void Save(Email instance);
+        /// <param name="emailContains">Search key.</param>
+        /// <returns>Returns a collection of emails that contain the search key, otherwise null.</returns>
+        IEnumerable<Email> FindAllBy(string emailContains);
     }
 }

@@ -2,6 +2,7 @@
 
 // .NET Libraries
 using System.Collections.Generic;
+using Infrastructure;
 
 // MovieBox Libraries
 using Infrastructure.Interfaces;
@@ -17,29 +18,12 @@ namespace Entities
         : IRepository<Address, int>
     {
         /// <summary>
-        /// Finds an address by its unique ID in the system.
+        /// Gets a collection of mailing address locations based on type and whether or not the record contains the address component value.
         /// </summary>
-        /// <param name="id">The unique ID of the address in the system.</param>
-        /// <returns>A single instance of <see cref="Address"/> from the repository, otherwise returns null.</returns>
-        Address FindById(int id);
-
-        /// <summary>
-        /// Finds all instances of addresses with the specified name.
-        /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<Address> FindBy(string key);
-
-        /// <summary>
-        /// Deletes an instance of <see cref="Address"/> from the repository.
-        /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="Address"/> to the repository.
-        /// </summary>
-        /// <param name="instance">The instance to save.</param>
-        void Save(Address instance);
+        /// <param name="addressComponentValue">The address component value to search for.</param>
+        /// <param name="addressComponentType">The address component type (<see cref="TypeAddressComponent"/>).</param>
+        /// <returns>An IEnumerable of mailing address instances.</returns>
+        IEnumerable<Address> FindByAddressComponent(string addressComponentValue,
+            TypeAddressComponent addressComponentType);
     }
 }

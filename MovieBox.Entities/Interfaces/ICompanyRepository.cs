@@ -17,29 +17,10 @@ namespace Entities
         : IRepository<Company, int>
     {
         /// <summary>
-        /// Finds a Company by their unique ID in the system.
+        /// Finds matches for companies in the system that contain the name.
         /// </summary>
-        /// <param name="id">The unique ID of the Company in the system.</param>
-        /// <returns>A single instance of <see cref="Company"/> from the repository, otherwise returns null.</returns>
-        Company FindById(int id);
-
-        /// <summary>
-        /// Finds all instances of companies with the specified name.
-        /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<Company> FindBy(string key);
-
-        /// <summary>
-        /// Deletes an instance of <see cref="Company"/> from the repository.
-        /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="Company"/> to the repository.
-        /// </summary>
-        /// <param name="instance">The instance to save.</param>
-        void Save(Company instance);
+        /// <param name="name">The name to search for.</param>
+        /// <returns>A collection of instances of <see cref="Company"/> from the repository, otherwise returns null.</returns>
+        IEnumerable<Company> FindByName(string name);
     }
 }

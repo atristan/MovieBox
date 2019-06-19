@@ -12,30 +12,30 @@ using Infrastructure;
 namespace Entities
 {
     /// <summary>
-    /// Represents a collection of people in the system.
+    /// Represents a collection of customers in the system.
     /// </summary>
-    public class People
-        : CollectionBase<Person>
+    public class Customers
+        : CollectionBase<Customer>
     {
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="People"/> class.
+        /// Initializes a new instance of the <see cref="Customers"/> class.
         /// </summary>
-        public People() { }
+        public Customers() { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="People"/> class.
+        /// Initializes a new instance of the <see cref="Customers"/> class.
         /// </summary>
-        /// <param name="initList">Accepts an IList of Employer as the initial list.</param>
-        public People(IList<Person> initList)
+        /// <param name="initList">Accepts an IList of Customer as the initial list.</param>
+        public Customers(IList<Customer> initList)
             : base(initList) { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="People"/> class.
+        /// Initializes a new instance of the <see cref="Customers"/> class.
         /// </summary>
-        /// <param name="initList">Accepts a CollectionBase of Employer as the initial list.</param>
-        public People(CollectionBase<Person> initList)
+        /// <param name="initList">Accepts a CollectionBase of Customer as the initial list.</param>
+        public Customers(CollectionBase<Customer> initList)
             : base(initList) { }
 
         #endregion

@@ -224,6 +224,15 @@ namespace Utilities
             return false;
         }
 
+        /// <summary>
+        /// Formats a specified date in one of the following formats:
+        /// Ex.:  01/01/2019 12:00:00 00
+        ///         or
+        ///       01/01/2019
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="doTime"></param>
+        /// <returns></returns>
         public static string FormatDate(DateTime date, bool doTime = false)
         {
             if (doTime)
@@ -232,6 +241,13 @@ namespace Utilities
             return date.ToString("MM/dd/yyyy");
         }
 
+        /// <summary>
+        /// Checks to see if a specified time is between a certain time.
+        /// </summary>
+        /// <param name="currenttime">The current time as a string.</param>
+        /// <param name="start">The start time as a Timespan.</param>
+        /// <param name="end">The end time as a Timespan.</param>
+        /// <returns></returns>
         public static bool IsTimeBetween(string currenttime, TimeSpan start, TimeSpan end)
         {
             DateTime curtime = Convert.ToDateTime(currenttime);
@@ -242,6 +258,17 @@ namespace Utilities
                 return curtime.TimeOfDay <= end || curtime.TimeOfDay >= start;
             else
                 return curtime.TimeOfDay >= start && curtime.TimeOfDay <= end;
+        }
+
+        /// <summary>
+        /// Calculates the timespan between two dates.
+        /// </summary>
+        /// <param name="startDate">The start date/time.</param>
+        /// <param name="endDate">The end date/time.</param>
+        /// <returns>A timespan indicating the amount of time between the dates.</returns>
+        public static TimeSpan CalculateTimespan(DateTime startDate, DateTime endDate)
+        {
+            return startDate.Subtract(endDate);
         }
 
         #endregion

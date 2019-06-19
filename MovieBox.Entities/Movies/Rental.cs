@@ -82,14 +82,6 @@ namespace Entities
             return result;
         }
 
-        public double? GetTotalRate()
-        {
-            if (DateReturned == null)
-                return null;
-
-
-        }
-
         #endregion
     }
 }

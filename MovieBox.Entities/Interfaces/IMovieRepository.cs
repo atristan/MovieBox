@@ -2,6 +2,7 @@
 
 // .NET Libraries
 using System.Collections.Generic;
+using Infrastructure.Enums;
 
 // MovieBox Libraries
 using Infrastructure.Interfaces;
@@ -19,27 +20,22 @@ namespace Entities
         /// <summary>
         /// Finds a movie by its unique ID in the system.
         /// </summary>
-        /// <param name="id">The unique ID of the movie in the system.</param>
+        /// <param name="trackingId">The tracking ID of the movie in the system.</param>
         /// <returns>A single instance of <see cref="Movie"/> from the repository, otherwise returns null.</returns>
-        Movie FindById(int id);
+        Movie FindByTrackingId(string trackingId);
 
         /// <summary>
-        /// Finds all instances of movie with the specified name.
+        /// Finds all movies with the specified key in their movie title.
         /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<Movie> FindBy(string key);
+        /// <param name="key">Search key string.</param>
+        /// <returns>A collection of movies when the search key is found, otherwise null.</returns>
+        IEnumerable<Movie> FindAllByName(string key);
 
         /// <summary>
-        /// Deletes an instance of <see cref="Movie"/> from the repository.
+        /// Finds all movies by genre type.
         /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="Movie"/> to the repository.
-        /// </summary>
-        /// <param name="instance"></param>
-        void Save(Movie instance);
+        /// <param name="genreType"></param>
+        /// <returns></returns>
+        IEnumerable<Movie> FindAllByGenre(TypeGenre genreType);
     }
 }

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 
 // MovieBox Libraries
+using Infrastructure;
 using Infrastructure.Interfaces;
 
 #endregion
@@ -18,29 +19,11 @@ namespace Entities
         : IRepository<PhoneNumber, int>
     {
         /// <summary>
-        /// Finds a phone number by its unique ID in the system.
+        /// Provides ability to search phone numbers by one of the number components specified in <see cref="TypePhoneNumberComponent"/> enum.
         /// </summary>
-        /// <param name="id">The unique ID of the phone number in the system.</param>
-        /// <returns>A single instance of <see cref="PhoneNumber"/> from the repository, otherwise returns null.</returns>
-        PhoneNumber FindById(int id);
-
-        /// <summary>
-        /// Finds all instances of phone numbers with the specified digits.
-        /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<PhoneNumber> FindBy(string key);
-
-        /// <summary>
-        /// Deletes an instance of <see cref="PhoneNumber"/> from the repository.
-        /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="PhoneNumber"/> to the repository.
-        /// </summary>
-        /// <param name="instance"></param>
-        void Save(PhoneNumber instance);
+        /// <param name="numberComponentValue">The value to search for.</param>
+        /// <param name="numberComponentType">The field to search against.</param>
+        /// <returns></returns>
+        IEnumerable<PhoneNumber> FindAllBy(int numberComponentValue, TypePhoneNumberComponent numberComponentType);
     }
 }

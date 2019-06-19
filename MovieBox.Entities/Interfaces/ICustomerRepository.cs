@@ -1,6 +1,7 @@
 ﻿#region Includes
 
 // .NET Libraries
+using System;
 using System.Collections.Generic;
 
 // MovieBox Libraries
@@ -17,29 +18,17 @@ namespace Entities
         : IRepository<Customer, int>
     {
         /// <summary>
-        /// Finds a customer by their unique ID in the system.
+        /// Gets a collection of customers based on a start date.
         /// </summary>
-        /// <param name="id">The unique ID of the customer in the system.</param>
-        /// <returns>A single instance of <see cref="Customer"/> from the repository, otherwise returns null.</returns>
-        Customer FindById(int id);
+        /// <param name="memberStartDate">The start date to search for.</param>
+        /// <returns>An IEnumerable of <see cref="Customer"/> instances.</returns>
+        IEnumerable<Customer> FindBy(DateTime memberStartDate);
 
         /// <summary>
-        /// Finds all instances of customers with the specified name.
+        /// Gets a customer from the repository by their customer id.
         /// </summary>
-        /// <param name="key">The name to search for.</param>
-        /// <returns>A collection of instances with the name specified.</returns>
-        IEnumerable<Customer> FindBy(string key);
-
-        /// <summary>
-        /// Deletes an instance of <see cref="Customer"/> from the repository.
-        /// </summary>
-        /// <param name="id">The ID of the instance to delete.</param>
-        void DeleteById(int id);
-
-        /// <summary>
-        /// Saves an instance of <see cref="Customer"/> to the repository.
-        /// </summary>
-        /// <param name="instance">The instance to save.</param>
-        void Save(Customer instance);
+        /// <param name="customerId"></param>
+        /// <returns></returns>
+        Customer FindByCustomerId(string customerId);
     }
 }

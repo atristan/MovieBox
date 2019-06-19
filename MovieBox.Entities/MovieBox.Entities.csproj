@@ -50,12 +50,13 @@
     <Compile Include="EntityBase.cs" />
     <Compile Include="Geography\Location.cs" />
     <Compile Include="Humans\Customer.cs" />
+    <Compile Include="Humans\Customers.cs" />
     <Compile Include="Humans\People.cs" />
     <Compile Include="Interfaces\ICompanyRepository.cs" />
     <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IEmailRepository.cs" />
     <Compile Include="Interfaces\IMovieRepository.cs" />
-    <Compile Include="Interfaces\IPersonRepository.cs" />
+    <Compile Include="Interfaces\IPeopleRepository.cs" />
     <Compile Include="Interfaces\IPhoneNumberRepository.cs" />
     <Compile Include="Interfaces\IAddressRepository.cs" />
     <Compile Include="Geography\Address.cs" />

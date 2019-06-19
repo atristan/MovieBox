@@ -5,7 +5,7 @@ using System.Configuration;
 
 #endregion
 
-namespace Utilities.Configuration
+namespace Utilities
 {
     /// <summary>
     /// Represents a configuration service provider in the system.
@@ -14,7 +14,7 @@ namespace Utilities.Configuration
     {
         #region Fields
 
-        private TypeEnvironment _AppModeType;
+        private int _AppModeType;
         private string _ApplicationName;
         private string _ConnectionString;
 
@@ -25,11 +25,11 @@ namespace Utilities.Configuration
         /// <summary>
         /// Gets or sets the application mode environment.
         /// </summary>
-        public TypeEnvironment AppModeType
+        public int AppModeType
         {
             get
             {
-                _AppModeType = TypeEnvironment.None;
+                _AppModeType = -1;
 
                 string appMode = GetConfigSetting("AppMode");
 
@@ -39,25 +39,25 @@ namespace Utilities.Configuration
                     {
                         case "test":
                         case "tst":
-                            _AppModeType = TypeEnvironment.TST;
+                            _AppModeType = 2;
                             break;
                         case "production":
                         case "prd":
                         case "prod":
-                            _AppModeType = TypeEnvironment.PRD;
+                            _AppModeType = 3;
                             break;
                         case "qat":
                         case "qa":
                         case "sandbox":
-                            _AppModeType = TypeEnvironment.QAT;
+                            _AppModeType = 4;
                             break;
                         default:
-                            _AppModeType = TypeEnvironment.DEV;
+                            _AppModeType = 1;
                             break;
                     }
                 }
                 else
-                    _AppModeType = TypeEnvironment.DEV;
+                    _AppModeType = 1;
 
                 return _AppModeType;
             }

@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 // PRIS Libraries
 using Infrastructure;
 using Infrastructure.Enums;
-using MovieBox.Entities;
+using Entities;
 
 #endregion
 

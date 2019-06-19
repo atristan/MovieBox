@@ -50,14 +50,15 @@
     <Compile Include="DomainEntity.cs" />
     <Compile Include="Enums\MovieTypes\TypeGenre.cs" />
     <Compile Include="Enums\PhoneTypes\TypePhoneNumberComponent.cs" />
-    <Compile Include="Enums\TypeCountryCode.cs" />
+    <Compile Include="Enums\PhoneTypes\TypeCountryCode.cs" />
     <Compile Include="Enums\TypeEnvironment.cs" />
     <Compile Include="Enums\TypeMonth.cs" />
     <Compile Include="Enums\TypeOrdinality.cs" />
     <Compile Include="Enums\TypePersonTitle.cs" />
     <Compile Include="Enums\PhoneTypes\TypePhone.cs" />
     <Compile Include="Enums\TypeUsage.cs" />
-    <Compile Include="Enums\TypeUsaState.cs" />
+    <Compile Include="LocationTypes\TypeAddressComponent.cs" />
+    <Compile Include="LocationTypes\TypeUsaState.cs" />
     <Compile Include="Interfaces\IDataContextStorageContainer.cs" />
     <Compile Include="Interfaces\IHasOwner.cs" />
     <Compile Include="Interfaces\IRepository.cs" />

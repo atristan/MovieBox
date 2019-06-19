@@ -119,7 +119,6 @@ namespace DataAccess
             {
                 IsDamaged = false,
                 DateRented = DateTime.Now,
-                RatePerDay = 0.99,
                 TrackingId = "1SD456C800-001",
                 CheckedOut = CreateMovies()
             });

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.Entities", "MovieB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.DataAccess", "MovieBox.DataAccess\MovieBox.DataAccess.csproj", "{635A9CDC-DF87-4873-8E53-DB03A1332003}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{22A53E5A-082E-4A6E-AF77-50FDF41A629F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBox.Web", "MovieBox.Web\MovieBox.Web.csproj", "{A9DB870F-3587-457F-9C0D-6F084EBAC5CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +37,16 @@ Global
 		{635A9CDC-DF87-4873-8E53-DB03A1332003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635A9CDC-DF87-4873-8E53-DB03A1332003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635A9CDC-DF87-4873-8E53-DB03A1332003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DB870F-3587-457F-9C0D-6F084EBAC5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DB870F-3587-457F-9C0D-6F084EBAC5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DB870F-3587-457F-9C0D-6F084EBAC5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DB870F-3587-457F-9C0D-6F084EBAC5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9DB870F-3587-457F-9C0D-6F084EBAC5CB} = {22A53E5A-082E-4A6E-AF77-50FDF41A629F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2DB0CAF-311E-4601-AFF2-8D238AB7A587}

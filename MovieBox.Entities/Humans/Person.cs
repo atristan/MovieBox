@@ -3,6 +3,7 @@
 // .NET Libraries
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 // PRIS Libraries
@@ -28,12 +29,13 @@ namespace Entities
         /// <summary>
         /// Gets or sets the person's firts name.
         /// </summary>
-        [Required]
+        [Required, DisplayName("First Name:")]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Gets or sets the person's middle name or middle initial.
         /// </summary>
+        [DisplayName("Middle (Name/Initial):")]
         public string MiddleName { get; set; }
 
         /// <summary>

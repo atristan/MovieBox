@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccess.AddressConfiguration" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\AddressConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.CompanyConfiguration" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\CompanyConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.CustomerConfiguration" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\CustomerConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.EmailConfiguration" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\EmailConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.MovieConfiguration" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\MovieConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.PersonConfiguration" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\PersonConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.PhoneNumberConfiguration" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\PhoneNumberConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.RentalConfiguration" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\RentalConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.CreateDbIfModelChanges" Collapsed="true">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAAACIAA=</HashCode>
+      <FileName>Initializers\CreateDbIfModelChanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.AddressRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\AddressRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.CompanyRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Repositories\CompanyRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.CustomerRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Repositories\CustomerRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.EmailRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EmailRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.MovieRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\MovieRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.PeopleRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PeopleRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.PhoneNumberRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PhoneNumberRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.RentalRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\RentalRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.DataContextFactory" Collapsed="true">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACABAAAA=</HashCode>
+      <FileName>DataContextFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.MovieBoxContextInitializer" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>MovieBoxContextInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Repository&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAQBAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DataAccess.UnitOfWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAccess.UnitOfWorkFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitOfWorkFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieBox.DataAccess.MovieBoxContext" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MovieBoxContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

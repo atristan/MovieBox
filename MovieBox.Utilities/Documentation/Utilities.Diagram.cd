@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Utilities.Email.EmailConfigCollection" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEICAAAAAAAAIAAQCAAAhAAAAAABAAIACAIAAABAAAQ=</HashCode>
+      <FileName>Configuration\Email\EmailConfigCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailConfigElement" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Configuration\Email\EmailConfigElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailConfigSection" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAA=</HashCode>
+      <FileName>Configuration\Email\EmailConfigSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailConfigService" Collapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Configuration\Email\EmailConfigService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailService" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\Email\EmailService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Configuration.ConfigElement" Collapsed="true">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Configuration\ConfigElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Configuration.ConfigElementCollection" Collapsed="true">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEICAAAAAAAAIAAACAAAhAAAAAABAAAACAAAAABAAAA=</HashCode>
+      <FileName>Configuration\ConfigElementCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Configuration.ConfigSection" Collapsed="true">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Configuration\ConfigSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.ConfigService" Collapsed="true">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAEAAAAAAAAAAgAAAAoIAAAgCAAAAAAAAA=</HashCode>
+      <FileName>Configuration\ConfigService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailFields" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEgIABCACAAEAACAAAAAAAAAoIAAA=</HashCode>
+      <FileName>Entities\EmailFields.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.Email.EmailSettings" Collapsed="true">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIACAAAAAAAAAAACAACAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Entities\EmailSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.DateTimeHelpers" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAEgAAAAAQFAACgQgAAAAAAiAAABQACACAAACIg=</HashCode>
+      <FileName>DateTimeHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.ExcelHelpers" Collapsed="true">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExcelHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.ExtensionHelpers" Collapsed="true">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtensionHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilities.StringHelpers" Collapsed="true">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAADAA=</HashCode>
+      <FileName>StringHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

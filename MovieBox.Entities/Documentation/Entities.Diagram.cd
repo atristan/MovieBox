@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entities.Company" Collapsed="true">
+    <Position X="15" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAACACAAAAgAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Email" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKAAAAAAAAAAAAAAACAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Communication\Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Emails">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Emails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.PhoneNumber" Collapsed="true">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKAAAAEAAAIBAAGAAAAEQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\PhoneNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.PhoneNumbers">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\PhoneNumbers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Address" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAaAAAAIgAAAAAQAAB4AAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Geography\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Addresses">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Geography\Addresses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Customer" Collapsed="true">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAA=</HashCode>
+      <FileName>Humans\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Customers">
+    <Position X="11.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Humans\Customers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.People">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Humans\People.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Person" Collapsed="true">
+    <Position X="1.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAACACAAAAgAAAQAAAAAAEQAAAAACAAAAAAAAg=</HashCode>
+      <FileName>Humans\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Movie" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAACIgAAAAAAAgAQAAAAQAAAAAAAAAABAgAA=</HashCode>
+      <FileName>Movies\Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Movies">
+    <Position X="15.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Movies\Movies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Rental" Collapsed="true">
+    <Position X="12.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKBAAAAAAAAgIAAAEEAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Movies\Rental.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Rentals">
+    <Position X="13.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Movies\Rentals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.EntityBase" Collapsed="true">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCAAAAAAAAAAAQAAAAAAAAEAAAEAAAAAAA=</HashCode>
+      <FileName>EntityBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Entities.IAddressRepository">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddressRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.ICompanyRepository">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Interfaces\ICompanyRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.ICustomerRepository">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interfaces\ICustomerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.IEmailRepository">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEmailRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.IMovieRepository">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovieRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.IPeopleRepository">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPeopleRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.IPhoneNumberRepository">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPhoneNumberRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entities.IRentalRepository">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRentalRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

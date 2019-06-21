@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Infrastructure.DataContextStorageFactory&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContextStorage\DataContextStorageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.HttpDataContextStorageContainer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQBABAA=</HashCode>
+      <FileName>DataContextStorage\HttpDataContextStorageContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Infrastructure.ThreadDataContextStorageContainer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAACQBAAAA=</HashCode>
+      <FileName>DataContextStorage\ThreadDataContextStorageContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Infrastructure.CollectionBase&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>CollectionBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.DomainEntity&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAgAAAAAAAAAAAAIAAAAAAAAAIAiA=</HashCode>
+      <FileName>DomainEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Infrastructure.ModelValidationException" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelValidationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.ValueObject&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAACAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>ValueObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Infrastructure.Interfaces.IDataContextStorageContainer&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQBAAAA=</HashCode>
+      <FileName>Interfaces\IDataContextStorageContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Infrastructure.Interfaces.IHasOwner" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHasOwner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Infrastructure.Interfaces.IRepository&lt;T, K&gt;" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAQBAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Infrastructure.Interfaces.ITrackDate" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITrackDate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Infrastructure.Interfaces.IUnitOfWork" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Infrastructure.Interfaces.IUnitOfWorkFactory" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUnitOfWorkFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Infrastructure.Enums.TypeGenre" Collapsed="true">
+    <Position X="10" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yAAAAAABAAAAAAAAAAAAAIAAAAAAAAAAIAAABAEAAAA=</HashCode>
+      <FileName>Enums\MovieTypes\TypeGenre.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Utilities.TypeCountryCode" Collapsed="true">
+    <Position X="6.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEA=</HashCode>
+      <FileName>Enums\PhoneTypes\TypeCountryCode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.Enums.TypePhone" Collapsed="true">
+    <Position X="10" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAQAAACAAAAAAAEAAAA=</HashCode>
+      <FileName>Enums\PhoneTypes\TypePhone.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.TypePhoneNumberComponent" Collapsed="true">
+    <Position X="4.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAIAAAGAAAAAQAAAAAAAAEAAAA=</HashCode>
+      <FileName>Enums\PhoneTypes\TypePhoneNumberComponent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Utilities.TypeEnvironment" Collapsed="true">
+    <Position X="8.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAEAAIA=</HashCode>
+      <FileName>Enums\TypeEnvironment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Utilities.TypeMonth" Collapsed="true">
+    <Position X="4.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEgAAABRAAAAAAQAwgAAAAAAQAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>Enums\TypeMonth.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.Enums.TypeOrdinality" Collapsed="true">
+    <Position X="6.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAGAAAA=</HashCode>
+      <FileName>Enums\TypeOrdinality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.TypePersonTitle" Collapsed="true">
+    <Position X="8.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAQIAAAAEAEAAAA=</HashCode>
+      <FileName>Enums\TypePersonTitle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.TypeUsage" Collapsed="true">
+    <Position X="6.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAAQEAAAA=</HashCode>
+      <FileName>Enums\TypeUsage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.TypeAddressComponent" Collapsed="true">
+    <Position X="4.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIgAAAAAQAAB4AAAABAAAAAAEAAAA=</HashCode>
+      <FileName>LocationTypes\TypeAddressComponent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Infrastructure.TypeUsState" Collapsed="true">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoQQIGSAQAQwkgmAAQBwCIBAIoQCUYWAgLAACQEKzQA=</HashCode>
+      <FileName>LocationTypes\TypeUsaState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
